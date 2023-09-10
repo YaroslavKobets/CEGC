@@ -1,0 +1,76 @@
+.post-card {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	@include screen-768 {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+	&:hover {
+		.post-card__img {
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+	&__preview {
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		img {
+			width: 100%;
+			transition: all 0.8s ease 0s;
+			object-fit: cover;
+		}
+	}
+
+	&__cat {
+		color: $color-white;
+		background: $color-green;
+		font-weight: 600;
+		padding: 4px 15px 6px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	&__title {
+		font-family: $fontFamilySecond;
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 1.2;
+		text-transform: uppercase;
+		padding-bottom: 17px;
+		border-bottom: 1px solid $color-dark-grey;
+		margin: 17px 0 13px;
+		&:hover {
+			color: $color-green-hover;
+		}
+		@include screen-1200 {
+			font-size: 21px;
+			margin: 10px 0;
+			padding-bottom: 10px;
+		}
+	}
+
+	&__descr {
+		margin-bottom: 13px;
+		cursor: pointer;
+		@include screen-1200 {
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__date {
+		ont-weight: 400;
+		font-size: 14px;
+		line-height: 1.8;
+		color: #8e8e8e;
+		@include screen-1200 {
+			line-height: 1.1;
+		}
+	}
+}

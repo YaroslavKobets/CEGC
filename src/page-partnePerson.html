@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('./html/static/head.html',{ "title": "наші партнери" })
+
+	<body>
+		<div class="wrapper">
+			@@include("html/template-parts/header.html",{})
+			<main class="page page-partner-person">
+				@@include('./html/template-parts/breadcrumbs.html',{})
+				@@include('./html/page-Person/person-info.html',{})
+			</main>
+			@@include('./html/template-parts/footer.html',{})
+			@@include('./html/template-parts/sprite-icons.html',{})
+		</div>
+
+		@@include('./html/static/js.html',{})
+	</body>
+</html>

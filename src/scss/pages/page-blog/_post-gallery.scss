@@ -1,0 +1,42 @@
+.post-content {
+	&__gallery {
+		margin: 37px 0 53px;
+		min-width: 0;
+		@include screen-768 {
+			margin: 20px 0 30px;
+		}
+		.post-main-slider {
+			.swiper-slide {
+				span {
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					padding: 4px 55px 6px;
+					color: $color-white;
+					background: $color-green;
+					display: block;
+					font-weight: 600;
+				}
+			}
+		}
+		.post-min-slider {
+			margin-top: 10px;
+			.swiper-slide {
+				flex-shrink: 1;
+				min-width: 16%;
+				overflow: hidden;
+				@include screen-1024 {
+					min-width: 155px;
+				}
+				img {
+					transition: all 0.3s ease 0s;
+				}
+			}
+			.swiper-slide-thumb-active {
+				img {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('./html/static/head.html',{ "title": "Aнонси" })
+
+	<body>
+		<div class="wrapper">
+			@@include("html/template-parts/header.html",{})
+			<main class="page page-announcements">
+				@@include('./html/template-parts/breadcrumbs.html',{})
+
+				<section class="categories">
+					<div class="categories__container container">
+						@@include('./html/template-parts/section-header.html',{"title":
+						"Анонс подій", "descr": "навчання - це основа успіху"})
+						<div class="categories__body">
+							<div class="categories__list">
+								<a href="#" class="categories__link">психологам</a>
+								<a href="#" class="categories__link">гештальт терапевтам</a>
+								<a href="#" class="categories__link active"
+									>Терапевтичні группи, тренінги</a
+								>
+							</div>
+							<div class="categories__text">
+								<p>
+									З іншого боку, початок повсякденної роботи з формування
+									позиції сприяє підготовці та реалізації форм розвитку.
+									Різноманітний та багатий досвід рамки та місце навчання.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				@@include('./html/page-announcements/event.html',{})
+			</main>
+			@@include('./html/template-parts/footer.html',{})
+			@@include('./html/template-parts/sprite-icons.html',{})
+		</div>
+
+		@@include('./html/static/js.html',{})
+	</body>
+</html>

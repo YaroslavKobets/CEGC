@@ -1,0 +1,31 @@
+.home-text {
+	&__container {
+	}
+
+	&__body {
+		margin-top: 20px;
+	}
+
+	&__photo {
+		img {
+			width: 100%;
+		}
+	}
+
+	&__content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 115px;
+		margin-bottom: 50px;
+		@include screen-1200 {
+			column-gap: 50px;
+		}
+		@include screen-1024 {
+			grid-template-columns: auto;
+			margin-bottom: 15px;
+			p {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

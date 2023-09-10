@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('./html/static/head.html',{ "title": "Photo" })
+
+	<body>
+		<div class="wrapper">
+			@@include("html/template-parts/header.html",{})
+			<main class="page page-photo">
+				@@include('./html/template-parts/breadcrumbs.html',{})
+
+				<section class="photo-content">
+					<div class="photo-content__container container">
+						@@include('./html/template-parts/section-header.html',{"title":
+						"фотографії", "descr": "навчання - це основа успіху"})
+						<div class="photo-content__body">
+							@@include('./html/page-Media/photo-slider.html',{})
+							@@include('./html/page-Media/photo-slider.html',{})
+							@@include('./html/page-Media/photo-slider.html',{})
+						</div>
+						@@include('./html/template-parts/pagination.html',{})
+					</div>
+				</section>
+			</main>
+			@@include('./html/template-parts/footer.html',{})
+			@@include('./html/template-parts/sprite-icons.html',{})
+		</div>
+
+		@@include('./html/static/js.html',{})
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('./html/static/head.html',{ "title": "Audio" })
+
+	<body>
+		<div class="wrapper">
+			@@include("html/template-parts/header.html",{})
+			<main class="page page-audio">
+				@@include('./html/template-parts/breadcrumbs.html',{})
+
+				<section class="audio-content">
+					<div class="audio-content__container container">
+						@@include('./html/template-parts/section-header.html',{"title":
+						"Відео та аудіо", "descr": "навчання - це основа успіху"})
+						<div class="audio-content__body">
+							<ul class="audio-content__list">
+								@@include('./html/page-Media/audio-link.html',{})
+								@@include('./html/page-Media/audio-link.html',{})
+								@@include('./html/page-Media/audio-link.html',{})
+								@@include('./html/page-Media/audio-link.html',{})
+								@@include('./html/page-Media/audio-link.html',{})
+								@@include('./html/page-Media/audio-link.html',{})
+								@@include('./html/page-Media/audio-link.html',{})
+							</ul>
+							@@include('./html/template-parts/pagination.html',{})
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('./html/template-parts/footer.html',{})
+			@@include('./html/template-parts/sprite-icons.html',{})
+		</div>
+
+		@@include('./html/static/js.html',{})
+	</body>
+</html>

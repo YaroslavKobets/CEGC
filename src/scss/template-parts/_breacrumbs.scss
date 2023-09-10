@@ -1,0 +1,61 @@
+.breadcrumbs {
+	margin: 112px 0 80px;
+	@include screen-1024 {
+		margin: 77px 0 60px;
+	}
+}
+.breadcrumbs-list {
+	display: flex;
+	align-items: center;
+	@include screen-480 {
+		flex-wrap: wrap;
+	}
+	li {
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 27px;
+			&::before,
+			&::after {
+				content: "";
+				width: 6px;
+				height: 1px;
+				background: $color-black;
+				position: absolute;
+				right: -18px;
+			}
+			&::before {
+				top: 40%;
+				transform: rotate(45deg) translateY(-50%);
+			}
+			&::after {
+				bottom: 40%;
+				transform: rotate(-45deg) translateY(50%);
+			}
+		}
+		&:nth-child(1) {
+			span {
+				&:hover {
+					color: $color-green;
+				}
+			}
+		}
+		&:nth-child(n + 2) {
+			span {
+				color: $color-green;
+				font-weight: 400;
+				&:hover {
+					color: $color-green-hover;
+				}
+			}
+		}
+
+		a {
+			span {
+				display: block;
+				font-size: 14px;
+				line-height: 1.57;
+				transition: all 0.3s ease 0s;
+			}
+		}
+	}
+}

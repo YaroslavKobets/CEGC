@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('./html/static/head.html',{ "title": "Блог" })
+
+	<body>
+		<div class="wrapper">
+			@@include("html/template-parts/header.html",{})
+			<main class="page page-post">
+				@@include('./html/template-parts/breadcrumbs.html',{})
+
+				<section class="blog-wrapper">
+					<div class="blog-wrapper__container container">
+						<div class="section-header">
+							<h2>блог</h2>
+							<a href="">Назад</a>
+							<hr />
+							<span>всі цікавинки від нас</span>
+						</div>
+						<div class="blog-wrapper__inner">
+							<button type="button" class="tag-btn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+							<div class="blog-wrapper__tags">
+								@@include('./html/page-blog/tags.html',{})
+							</div>
+							<div class="blog-wrapper__body">
+								<div class="post-content">
+									<div class="post-content__image">
+										<img
+											src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+											data-src="@img/page-blog/post-img.jpg"
+											decoding="async"
+											alt=""
+											title=""
+										/>
+										<span class="post-content__cat">Сімейна психологія</span>
+									</div>
+									<h1 class="post-content__title">
+										Депресія в гештальт-терапії. Лікування стосунками
+										<span>24 жовтня 2021</span>
+									</h1>
+									<div class="post-content__descr">
+										<p>
+											Завдання організації, особливо реалізація намічених
+											планових завдань забезпечує широкому колу (фахівців) що у
+											формуванні системи навчання кадрів, відповідає насущним
+											потребам. Товариші! постійне кількісне зростання та сфера
+											нашої активності вимагають визначення та уточнення
+											позицій, які займають учасники щодо поставлених завдань.
+										</p>
+									</div>
+									<div class="post-content__text">
+										<blockquote>
+											<svg>
+												<use xlink:href="#cegc-star"></use>
+											</svg>
+											Різноманітний та багатий досвід зміцнення та розвитку
+											структури забезпечує широкому колу (фахівців) участь у
+											формуванні відповідних умов активізації. Різноманітний та
+											багатий досвід постійне кількісне зростання та сфера нашої
+											активності дозволяє оцінити значення суттєвих фінансових
+											відносин.
+										</blockquote>
+										<p>
+											Повсякденна практика показує, що реалізація намічених
+											планових завдань вимагають визначення та уточнення
+											суттєвих фінансових та адміністративних умов. Товариші!
+											Реалізація намічених планових завдань є цікавим
+											експериментом перевірки напрямів прогресивного розвитку.
+											Таким чином, зміцнення та розвиток структури дозволяє
+											оцінити значення систем масової участі. Щоденна практика
+											показує, що нова модель організаційної діяльності
+											вимагають від нас аналізу форм розвитку.
+										</p>
+										<h2>назва цікавого підзаголовку</h2>
+										<p>
+											Так само реалізація намічених планових завдань дозволяє
+											оцінити значення подальших напрямів розвитку.
+											Різноманітний та багатий досвід рамки та місце навчання
+											кадрів значною мірою обумовлює створення систем масової
+											участі. Завдання організації, особливо ж що склалася
+											структура організації дозволяє виконувати важливі завдання
+											розробки істотних фінансових і адміністративних умов.
+										</p>
+										<p>
+											Так само реалізація намічених планових завдань дозволяє
+											виконувати важливі завдання розробки системи навчання
+											кадрів, відповідає насущним потребам. З іншого боку, нова
+											модель організаційної діяльності вимагають від нас аналізу
+											форм розвитку. Товариші! Реалізація намічених планових
+											завдань є цікавим експериментом перевірки нових
+											пропозицій.
+										</p>
+									</div>
+									<div class="post-content__author">
+										Автор <strong>Світлана Іванівна</strong>
+									</div>
+									<div class="post-content__footer">
+										<div class="post-content__socials">
+											Поділитися:
+											<ul>
+												<li>
+													<a href="">
+														<svg>
+															<use xlink:href="#cegc-facebook"></use>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<svg>
+															<use xlink:href="#cegc-instagram"></use>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<svg>
+															<use xlink:href="#cegc-telegram"></use>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<svg>
+															<use xlink:href="#cegc-whatsapp"></use>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="post-content__view">42 перегляд</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('./html/template-parts/footer.html',{})
+			@@include('./html/template-parts/sprite-icons.html',{})
+		</div>
+
+		@@include('./html/static/js.html',{})
+	</body>
+</html>

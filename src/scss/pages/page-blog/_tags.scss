@@ -1,0 +1,69 @@
+.blog-tags {
+	padding-right: 17px;
+	position: relative;
+	margin-top: -10px;
+	@include screen-768 {
+		display: none;
+	}
+	&::before {
+		content: "";
+		width: 1px;
+		height: calc(100% + 140px);
+		position: absolute;
+		right: 0;
+		top: -60px;
+		background: $color-dark-grey;
+		@include screen-768 {
+			height: calc(100% + 60px);
+		}
+	}
+	li {
+		padding: 10px 0;
+		border-bottom: 1px solid $color-dark-grey;
+
+		a {
+			font-family: $fontFamilySecond;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 1.5;
+			text-transform: uppercase;
+			@include screen-1200 {
+				font-size: 17px;
+				line-height: 1.2;
+			}
+			&:hover {
+				color: $color-green-hover;
+			}
+			&.active {
+				color: $color-green !important;
+				pointer-events: none;
+			}
+		}
+	}
+	.button {
+		margin-top: 70px;
+	}
+}
+
+.tag-btn {
+	width: 35px;
+	height: 35px;
+	padding: 8px 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: space-between;
+	position: absolute;
+	top: -65px;
+	left: -5px;
+	z-index: 4;
+	display: none;
+	span {
+		width: 100%;
+		height: 2px;
+		background: $color-green;
+	}
+	@include screen-768 {
+		display: flex;
+	}
+}

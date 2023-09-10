@@ -1,0 +1,34 @@
+<section class="testimonials">
+	<div class="testimonials__continer container">
+		@@include('../template-parts/section-header.html',{"title": "відгуки",
+		"descr":
+		"про нас говорять"})
+		<div class="categories__body">
+			<div class="categories__list">
+				<a href="#" class="categories__link">Клуб професійного розвитку гештальтерапевтів</a>
+				<a href="#" class="categories__link">Клуб професійного розвитку практикуючих психологів</a>
+				<a href="#" class="categories__link active">Підготовка гештальт терапевтів</a>
+				<a href="#" class="categories__link">Консультаціі та терапія онлайн/оффлайн</a>
+				<a href="#" class="categories__link">Групові терапевтичні та навчальні подіі</a>
+				<p>Оберіть направлення, відгуки, якого вас цікавлять, і ви можете ознайомитися с результатами нашої роботи, по
+					оцінкам наших кліентів.</p>
+			</div>
+		</div>
+		<div class="testimonials__body">
+			@@include('../template-parts/reviews-card.html',{})
+			@@include('../template-parts/reviews-card.html',{})
+			@@include('../template-parts/reviews-card.html',{})
+			@@include('../template-parts/reviews-card.html',{})
+			@@include('../template-parts/reviews-card.html',{})
+			@@include('../template-parts/reviews-card.html',{})
+			@@include('../template-parts/reviews-card.html',{})
+			@@include('../template-parts/reviews-card.html',{})
+			@@include('../template-parts/reviews-card.html',{})
+			@@include('../template-parts/reviews-card.html',{})
+		</div>
+		@@include('../template-parts/pagination.html',{})
+		<div class="button--wrapper">
+			<a href="#" class="button">Залишити відгук</a>
+		</div>
+	</div>
+</section>

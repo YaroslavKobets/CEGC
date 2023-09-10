@@ -1,0 +1,26 @@
+@use "sass:math";
+
+//<SETTINGS>========================================
+@import "base/helpers";
+@import "base/mixins";
+@import "fonts/fonts";
+@import "base/null";
+@import "base/basic";
+@import "modules/swiper";
+//<SETTINGS>========================================
+
+//<HEDER + FOOTER STYLE>========================================
+@import "template-parts/template-parts";
+//</HEDER + FOOTER STYLE>========================================
+
+//<PAGES STYLE>========================================
+@import "pages/page-home/home";
+@import "pages/page-aboutUs/about-us";
+@import "pages/page-Directions/directions";
+@import "pages/page-Announcements/announcements";
+@import "pages/page-Person/person";
+@import "pages/page-testimonials/testimonials";
+@import "pages/page-blog/blog";
+@import "pages/page-EventInfo/event-info";
+@import "pages/page-Media/media";
+@import "pages/page-Events/events";

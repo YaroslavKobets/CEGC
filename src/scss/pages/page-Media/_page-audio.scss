@@ -1,0 +1,76 @@
+.audio-content {
+	margin-bottom: 80px;
+	.section-header {
+		margin-bottom: 43px;
+	}
+	&__body {
+		max-width: 910px;
+	}
+
+	&__list-item {
+		width: 100%;
+		max-width: 760px;
+		border-bottom: 1px solid #b6b6b6;
+		padding: 10px 0 24px;
+		position: relative;
+		transition: all 0.3s ease 0s;
+
+		&:not(:last-child) {
+			margin-bottom: 28px;
+		}
+		&::before {
+			content: "";
+			width: calc(100% + 30px);
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: -20%;
+			background: $color-light-grey;
+			z-index: -1;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.3s ease 0s;
+		}
+		&:hover {
+			border-color: transparent;
+			&::before {
+				opacity: 1;
+				visibility: visible;
+				right: -15px;
+			}
+		}
+	}
+
+	&__link-title {
+		font-family: $fontFamilySecond;
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 1.2;
+		text-transform: uppercase;
+		margin-bottom: 23px;
+		display: block;
+		@include screen-768 {
+			font-size: 21px;
+			margin-bottom: 15px;
+		}
+		@include screen-374 {
+			font-size: 18px;
+		}
+	}
+
+	&__link-info {
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		line-height: 25px;
+		overflow: hidden;
+		pre {
+			font-size: 17px;
+			color: #2cd67a;
+			margin-left: 52px;
+			@include screen-768 {
+				margin-left: 15px;
+			}
+		}
+	}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('./html/static/head.html',{ "title": "Консультаціі та терапія
+	онлайн/оффлайн" })
+
+	<body>
+		<div class="wrapper">
+			@@include("html/template-parts/header.html",{})
+			<main class="page page-person">
+				@@include('./html/template-parts/breadcrumbs.html',{})
+				@@include('./html/page-Person/person-info.html',{})
+				@@include('./html/page-Person/persone-video.html',{})
+
+				<section class="home-reviews">
+					<div class="home-reviews__container container">
+						<h3>Відгуки</h3>
+						<div class="home-reviews__body">
+							<div class="home-reviews-swiper swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										@@include('./html/template-parts/reviews-card.html',{})
+										@@include('./html/template-parts/reviews-card.html',{})
+									</div>
+									<div class="swiper-slide">
+										@@include('./html/template-parts/reviews-card.html',{})
+										@@include('./html/template-parts/reviews-card.html',{})
+									</div>
+									<div class="swiper-slide">
+										@@include('./html/template-parts/reviews-card.html',{})
+										@@include('./html/template-parts/reviews-card.html',{})
+									</div>
+									<div class="swiper-slide">
+										@@include('./html/template-parts/reviews-card.html',{})
+										@@include('./html/template-parts/reviews-card.html',{})
+									</div>
+									<div class="swiper-slide">
+										@@include('./html/template-parts/reviews-card.html',{})
+										@@include('./html/template-parts/reviews-card.html',{})
+									</div>
+								</div>
+								<div class="swiper-navigation">
+									<div class="swiper-pagination"></div>
+									<div class="swiper-buttons">
+										<div class="swiper-button-prev">
+											<svg>
+												<use xlink:href="#cegc-slider-arrow"></use>
+											</svg>
+										</div>
+										<div class="swiper-button-next">
+											<svg>
+												<use xlink:href="#cegc-slider-arrow"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="button--wrapper">
+								<a href="#" class="button">Залишити відгук</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('./html/template-parts/footer.html',{})
+			@@include('./html/template-parts/sprite-icons.html',{})
+		</div>
+
+		@@include('./html/static/js.html',{})
+	</body>
+</html>

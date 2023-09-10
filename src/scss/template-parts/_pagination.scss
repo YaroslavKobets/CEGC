@@ -1,0 +1,61 @@
+.pagging {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 35px;
+	margin-top: 31px;
+	&__arrow {
+		width: 35px;
+		height: 35px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		svg {
+			width: 35px;
+			height: 11px;
+			fill: #bcbcbc;
+		}
+		&.active {
+			svg {
+				fill: $color-green;
+			}
+		}
+	}
+	&__arrow--prev {
+		right: 50px;
+	}
+	&__arrow--next {
+		transform: rotate(180deg);
+		right: 0;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		li {
+			margin-right: 11px;
+
+			&:nth-child(2n) {
+				margin-right: 20px;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&__item {
+		display: block;
+		width: 5px;
+		height: 5px;
+		cursor: pointer;
+		background: #858585;
+		font-size: 0;
+		&.active {
+			background: $color-green;
+		}
+	}
+}

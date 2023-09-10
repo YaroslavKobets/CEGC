@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('./html/static/head.html',{ "title": "Блог" })
+
+	<body>
+		<div class="wrapper">
+			@@include("html/template-parts/header.html",{})
+			<main class="page page-post">
+				@@include('./html/template-parts/breadcrumbs.html',{})
+
+				<section class="blog-wrapper">
+					<div class="blog-wrapper__container container">
+						@@include('./html/template-parts/section-header.html',{"title":
+						"блог", "descr": "всі цікавинки від нас"})
+						<div class="blog-wrapper__inner">
+							<button type="button" class="tag-btn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+							<div class="blog-wrapper__tags">
+								@@include('./html/page-blog/tags.html',{})
+							</div>
+							<div class="blog-wrapper__body">
+								<div class="post-content">
+									<h1 class="post-content__title">
+										назва мероприємства, фотокартки якої треба розмістити в цїй
+										статьї
+										<span>24 жовтня 2021</span>
+									</h1>
+									<div class="post-content__descr">
+										<p>
+											Завдання організації, особливо реалізація намічених
+											планових завдань забезпечує широкому колу (фахівців) що у
+											формуванні системи навчання кадрів, відповідає насущним
+											потребам. Товариші! постійне кількісне зростання та сфера
+											нашої активності вимагають визначення та уточнення
+											позицій, які займають учасники щодо поставлених завдань.
+										</p>
+									</div>
+
+									@@include('./html/page-blog/post-gallery.html',{})
+
+									<div class="post-content__footer">
+										<div class="post-content__socials">
+											Поділитися:
+											<ul>
+												<li>
+													<a href="">
+														<svg>
+															<use xlink:href="#cegc-facebook"></use>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<svg>
+															<use xlink:href="#cegc-instagram"></use>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<svg>
+															<use xlink:href="#cegc-telegram"></use>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<svg>
+															<use xlink:href="#cegc-whatsapp"></use>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="post-content__view">42 перегляд</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('./html/template-parts/footer.html',{})
+			@@include('./html/template-parts/sprite-icons.html',{})
+		</div>
+
+		@@include('./html/static/js.html',{})
+	</body>
+</html>

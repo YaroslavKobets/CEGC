@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('./html/static/head.html',{ "title": "Home" })
+
+	<body>
+		<div class="wrapper">
+			@@include("html/template-parts/header.html",{})
+			<main class="page page-home">
+				@@include('./html/page-home/intro.html',{})
+				@@include('./html/page-home/our-concept.html',{})
+				@@include('./html/page-home/text.html',{})
+				@@include('./html/page-home/services.html',{})
+				@@include('./html/template-parts/card-slider.html',{})
+				@@include('./html/template-parts/card-slider.html',{})
+				@@include('./html/page-home/reviews.html',{})
+				@@include('./html/page-home/read-more.html',{})
+			</main>
+			@@include('./html/template-parts/footer.html',{})
+			@@include('./html/template-parts/sprite-icons.html',{})
+		</div>
+
+		@@include('./html/static/js.html',{})
+	</body>
+</html>

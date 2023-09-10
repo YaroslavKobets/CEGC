@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('./html/static/head.html',{ "title": "Блог" })
+
+	<body>
+		<div class="wrapper">
+			@@include("html/template-parts/header.html",{})
+			<main class="page page-blog">
+				@@include('./html/template-parts/breadcrumbs.html',{})
+
+				<section class="blog-wrapper">
+					<div class="blog-wrapper__container container">
+						@@include('./html/template-parts/section-header.html',{"title":
+						"блог", "descr": "всі цікавинки від нас"})
+						<div class="blog-wrapper__inner">
+							<button type="button" class="tag-btn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+							<div class="blog-wrapper__tags">
+								@@include('./html/page-blog/tags.html',{})
+							</div>
+							<div class="blog-wrapper__body">
+								@@include('./html/page-blog/post-card.html',{})
+								@@include('./html/page-blog/post-card.html',{})
+								@@include('./html/page-blog/post-card.html',{})
+								@@include('./html/page-blog/post-card.html',{})
+								@@include('./html/page-blog/post-card.html',{})
+								@@include('./html/page-blog/post-card.html',{})
+							</div>
+						</div>
+						@@include('./html/template-parts/pagination.html',{})
+					</div>
+				</section>
+			</main>
+			@@include('./html/template-parts/footer.html',{})
+			@@include('./html/template-parts/sprite-icons.html',{})
+		</div>
+
+		@@include('./html/static/js.html',{})
+	</body>
+</html>

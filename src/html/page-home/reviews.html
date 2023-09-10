@@ -1,0 +1,45 @@
+<section class="home-reviews">
+	<div class="home-reviews__container container">
+		@@include('../template-parts/section-header.html',{"title": "відгуки про нашу роботу", "descr": "про нас говорять"})
+		<div class="home-reviews__body">
+			<div class="home-reviews-swiper swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						@@include('../template-parts/reviews-card.html',{})
+					</div>
+					<div class="swiper-slide">
+						@@include('../template-parts/reviews-card.html',{})
+					</div>
+					<div class="swiper-slide">
+						@@include('../template-parts/reviews-card.html',{})
+					</div>
+					<div class="swiper-slide">
+						@@include('../template-parts/reviews-card.html',{})
+					</div>
+					<div class="swiper-slide">
+						@@include('../template-parts/reviews-card.html',{})
+					</div>
+
+				</div>
+				<div class="swiper-navigation">
+					<div class="swiper-pagination"></div>
+					<div class="swiper-buttons">
+						<div class="swiper-button-prev">
+							<svg>
+								<use xlink:href="#cegc-slider-arrow"></use>
+							</svg>
+						</div>
+						<div class="swiper-button-next">
+							<svg>
+								<use xlink:href="#cegc-slider-arrow"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="home-reviews__footer">
+			<a href="/page-Testimonials.html" class="button">Читати всі відгуки</a>
+		</div>
+	</div>
+</section>

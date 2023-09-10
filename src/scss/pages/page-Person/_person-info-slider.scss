@@ -1,0 +1,11 @@
+.person-info-slider {
+	.page-partner-person & {
+		display: none;
+	}
+}
+.person-info-slider-swiper {
+	margin: 15px 0 0;
+	.swiper-navigation {
+		justify-content: flex-end;
+	}
+}

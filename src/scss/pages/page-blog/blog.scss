@@ -1,0 +1,49 @@
+@import "./post-card";
+@import "./post-content";
+@import "./tags";
+@import "./tags";
+@import "./post-gallery";
+
+.blog-wrapper {
+	margin-bottom: 88px;
+	min-width: 0;
+	&__inner {
+		display: flex;
+		grid-template-columns: calc(315 / 1380 * 10fr) calc(1025 / 1380 * 10fr);
+		column-gap: 40px;
+		margin-top: 39px;
+		position: relative;
+		min-width: 0;
+		@include screen-1200 {
+			column-gap: 15px;
+		}
+		@include screen-1024 {
+			grid-template-columns: 3.3fr 7.7fr;
+		}
+		@include screen-768 {
+			grid-template-columns: auto;
+		}
+	}
+
+	&__tags {
+		@include screen-768 {
+			position: absolute;
+			z-index: 3;
+			background: $color-white;
+		}
+	}
+
+	&__body {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 39px calc(68 / 1380 * 100%);
+		min-width: 0;
+		@include screen-1200 {
+			gap: 25px 15px;
+		}
+		@include screen-1024 {
+			display: block !important;
+			grid-template-columns: 100% !important;
+		}
+	}
+}

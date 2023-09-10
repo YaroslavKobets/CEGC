@@ -1,0 +1,45 @@
+<section class="card-slider">
+	<div class="card-slider__container container">
+		@@include('../template-parts/section-header.html',{"title": "наші партнери", "descr": "наш багаторічний досвід"})
+		<div class="card-slider__body">
+			<div class="card-swiper swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						@@include('./persone-card.html',{})
+					</div>
+					<div class="swiper-slide">
+						@@include('./persone-card.html',{})
+					</div>
+					<div class="swiper-slide">
+						@@include('./persone-card.html',{})
+					</div>
+					<div class="swiper-slide">
+						@@include('./persone-card.html',{})
+					</div>
+					<div class="swiper-slide">
+						@@include('./persone-card.html',{})
+					</div>
+
+
+				</div>
+				<div class="swiper-navigation">
+					<div class="swiper-pagination"></div>
+					<div class="swiper-buttons">
+						<div class="swiper-button-prev">
+							<svg>
+								<use xlink:href="#cegc-slider-arrow"></use>
+							</svg>
+						</div>
+						<div class="swiper-button-next">
+							<svg>
+								<use xlink:href="#cegc-slider-arrow"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</section>

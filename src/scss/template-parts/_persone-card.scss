@@ -1,0 +1,52 @@
+.persone-card {
+	max-width: 310px;
+	padding-right: 5px;
+	&__photo {
+		position: relative;
+		padding-bottom: 25px;
+		margin-bottom: 7px;
+		&::before {
+			content: "";
+			width: calc(100% - 5px);
+			height: 1px;
+			background: #b6b6b6;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+	}
+
+	&__info {
+		min-width: calc(260 / 305 * 100%);
+		position: absolute;
+		left: 0;
+		bottom: 15px;
+		padding: 11px 26px 11px;
+		display: inline-flex;
+		flex-direction: column;
+		background: $color-green;
+		color: $color-white;
+		@include screen-1024 {
+			padding: 8px 11px;
+		}
+	}
+
+	&__name {
+		font-size: 17px;
+		line-height: 1.1;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	&__position {
+		font-size: 14px;
+		line-height: 18px;
+		font-style: italic;
+		font-weight: 400;
+		text-transform: lowercase;
+	}
+
+	&__descr {
+		margin-right: -5px;
+	}
+}
